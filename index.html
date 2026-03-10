@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Khutso Masia - Frontend Developer | Portfolio</title>
+    <meta name="description" content="Passionate Frontend Developer with 2+ years experience in HTML, CSS, JavaScript, React Native, and C#. View my portfolio and get in touch for your next project." />
+    <meta name="keywords" content="frontend developer, web developer, HTML, CSS, JavaScript, React Native, C#, portfolio, software developer" />
+    <meta name="author" content="Khutso Masia" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://masia-khutso-portfolio.netlify.app" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://khutso-masia.netlify.app" />
+    <meta property="og:title" content="Khutso Masia - Frontend Developer Portfolio" />
+    <meta property="og:description" content="Passionate Frontend Developer with 2+ years experience. Specialized in HTML, CSS, JavaScript, React Native, and C#. Let's build something amazing together!" />
+    <meta property="og:image" content="https://khutso-masia.netlify.app/assets/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Khutso Masia Portfolio" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://khutso-masia.netlify.app" />
+    <meta property="twitter:title" content="Khutso Masia - Frontend Developer Portfolio" />
+    <meta property="twitter:description" content="Passionate Frontend Developer with 2+ years experience. Specialized in HTML, CSS, JavaScript, React Native, and C#." />
+    <meta property="twitter:image" content="https://khutso-masia.netlify.app/assets/og-image.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#6366f1" />
+    <meta name="msapplication-TileColor" content="#6366f1" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div class="bubbles" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="particles" aria-hidden="true"></div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+      <span class="theme-icon">🌙</span>
+    </button>
+    <nav id="desktop-nav" class="reveal">
+      <div class="logo">Khutso Masia</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav" class="reveal">
+      <div class="logo">Khutso Masia</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile" class="reveal">
+      <div class="hero-background">
+        <div class="hero-particles"></div>
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="section__pic-container">
+        <div class="profile-wrapper">
+          <img src="./assets/WhatsApp Image 2025-05-14 at 12.28.18_024633b0.jpg" alt="Khutso Masia profile picture" class="profile-img" />
+          <div class="profile-glow"></div>
+          <div class="profile-border"></div>
+        </div>
+      </div>
+      <div class="section__text">
+        <div class="hero-content">
+          <p class="section__text__p1">
+            <span class="greeting-text">Hello, I'm</span>
+            <span class="cursor-glow">|</span>
+          </p>
+          <h1 class="title">
+            <span class="title-main">Khutso Masia</span>
+            <span class="title-underline"></span>
+          </h1>
+          <p class="section__text__p2">
+            <span class="typing-text">Frontend Developer</span>
+            <span class="cursor">|</span>
+          </p>
+          <p class="professional-summary">
+            Passionate Frontend Developer with 2+ years of experience building modern, responsive web applications. 
+            Specialized in React, JavaScript, and creating exceptional user experiences. 
+            Seeking challenging frontend roles where I can contribute to innovative projects and grow professionally.
+          </p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('assets/Resume.pdf')"
+            >
+              <span class="btn-icon">📄</span>
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="scrollToId('contact')">
+              <span class="btn-icon">💬</span>
+              Contact Info
+            </button>
+          </div>
+        </div>
+      </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/khutso-masia-a297362b3', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/Khutso230', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="reveal">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/WhatsApp Image 2024-05-09 at 17.26.14_f186e8a6.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Higher Certificate in Mobile Application and Web Development<br />Diploma in Software Development</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Passionate and committed software developer with a Higher Certificate
+              in Mobile Application and Web Development from Rosebank College.
+              Currently pursuing a career in software development with a strong 
+              foundation in mobile application and web development technologies.
+              Eager to leverage my skills and knowledge to contribute effectively
+              to innovative software development teams.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="scrollToId('experience')"
+      />
+    </section>
+    <section id="experience" class="reveal">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article class="skill-item">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML5 & CSS3</h3>
+                  <p>Expert</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript (ES6+)</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React.js</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React Native</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git & GitHub</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article class="skill-item">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="60%"></div>
+                  </div>
+                  <p>60%</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="82%"></div>
+                  </div>
+                  <p>82%</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="70%"></div>
+                  </div>
+                  <p>70%</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="78%"></div>
+                  </div>
+                  <p>78%</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="scrollToId('projects')"
+      />
+    </section>
+    <section id="projects" class="reveal">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      
+      <!-- Project Filter Buttons -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+      </div>
+      
+      <div class="experience-details-container">
+        <div class="about-containers" id="projects-container">
+          <div class="details-container color-container" data-category="web frontend">
+            <div class="article-container">
+              <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&auto=format"
+                alt="E-Commerce Platform"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <span class="view-details">View Details</span>
+              </div>
+              <div class="project-metrics">
+                <div class="metric">
+                  <span class="metric-value">40%</span>
+                  <span class="metric-label">Performance Boost</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">2.5s</span>
+                  <span class="metric-label">Load Time</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h2 class="experience-sub-title project-title">E-Commerce Platform</h2>
+              <p class="project-description">Full-stack e-commerce solution with real-time inventory management and payment processing</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Stripe API</span>
+              </div>
+              <div class="project-achievements">
+                <span class="achievement">🏆 Best Performance Award</span>
+                <span class="achievement">📈 10K+ Monthly Users</span>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/Khutso230/ecommerce-platform', '_blank')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://masia-khutso-portfolio.netlify.app', '_blank')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container" data-category="mobile">
+            <div class="article-container">
+              <img
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&auto=format"
+                alt="Fitness Tracker App"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <span class="view-details">View Details</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h2 class="experience-sub-title project-title">Fitness Tracker App</h2>
+              <p class="project-description">React Native mobile app for workout tracking</p>
+              <div class="project-tech">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Redux</span>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/Khutso230/fitness-tracker', '_blank')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://masia-khutso-portfolio.netlify.app', '_blank')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container" data-category="web frontend">
+            <div class="article-container">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop&auto=format"
+                alt="Portfolio Website"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <span class="view-details">View Details</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+              <p class="project-description">Personal portfolio with modern design and animations</p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/Khutso230/portfolio', '_blank')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://masia-khutso-portfolio.netlify.app', '_blank')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="scrollToId('contact')"
+      />
+    </section>
+    <section id="contact" class="reveal">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="availability-status">
+        <span class="status-dot available"></span>
+        <p><strong>Currently Available</strong> for freelance and full-time opportunities</p>
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:Khutsomasia72@gmail.com">Khutsomasia72@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/khutso-masia-a297362b3/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/Khutso230">GitHub</a></p>
+        </div>
+      </div>
+      <div class="contact-cta">
+        <p>📧 Typically responds within 24 hours</p>
+        <p>💼 Open to remote and on-site opportunities</p>
+      </div>
+      <form class="contact-form" action="https://formsubmit.co/Khutsomasia72@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="/" />
+        <input type="hidden" name="_subject" value="New portfolio message" />
+        <input type="hidden" name="_captcha" value="false" />
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <input type="text" name="_replyto" placeholder="Your Phone (optional)" />
+        <textarea name="message" rows="6" placeholder="Tell me about your project or opportunity" required></textarea>
+        <button type="submit" class="btn btn-color-1">Send Message</button>
+      </form>
+    </section>
+    <footer class="reveal">
+      <div class="footer-brand">
+        <h3 class="footer-name">Khutso Masia</h3>
+        <p class="footer-tagline">Frontend Developer</p>
+      </div>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Khutso Masia. All Rights Reserved.</p>
+    </footer>
+    
+    <!-- Project Modal -->
+    <div id="project-modal" class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeProjectModal()">&times;</span>
+        <div class="modal-header">
+          <img id="modal-image" src="" alt="" class="modal-project-img">
+          <div class="modal-project-info">
+            <h2 id="modal-title" class="modal-project-title"></h2>
+            <p id="modal-description" class="modal-project-description"></p>
+            <div id="modal-tech" class="modal-project-tech"></div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <h3>Project Overview</h3>
+          <p id="modal-overview"></p>
+          <h3>Key Features</h3>
+          <ul id="modal-features"></ul>
+          <h3>Technical Implementation</h3>
+          <p id="modal-implementation"></p>
+        </div>
+        <div class="modal-footer">
+          <button id="modal-github" class="btn btn-color-2">View on Github</button>
+          <button id="modal-demo" class="btn btn-color-2">Live Demo</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

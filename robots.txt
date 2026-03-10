@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://khutso-masia.netlify.app/sitemap.xml
+
+
+
+
